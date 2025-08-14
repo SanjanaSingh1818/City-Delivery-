@@ -113,7 +113,7 @@ const ServicesSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold text-accent mb-4">
             خدماتنا المميزة
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -132,13 +132,13 @@ const ServicesSection = () => {
               >
                 <div className="flex flex-col items-center text-center space-y-4">
                   {/* Icon */}
-                  <div className={`p-4 rounded-full bg-gradient-to-br from-primary/10 to-primary/5 ${service.color} group-hover:scale-110 transition-transform duration-300`}>
+                  <div className="p-4 rounded-full bg-gradient-to-br from-primary/10 to-primary/5 text-accent group-hover:scale-110 transition-transform duration-300">
                     <IconComponent size={40} />
                   </div>
                   
                   {/* Content */}
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-semibold text-accent mb-2 group-hover:text-primary transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground">

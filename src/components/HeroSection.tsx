@@ -76,10 +76,10 @@ const HeroSection = () => {
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Logo Placeholder */}
         <div ref={logoRef} className="mb-8">
-          <div className="w-24 h-24 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30">
-            {/* TODO: Replace with actual logo */}
-            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-              <span className="text-primary font-bold text-xl">KE</span>
+          <div className="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border-2 border-white/30">
+            {/* TODO: Replace with actual logo - Add your logo here */}
+            <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-accent font-bold text-2xl">LOGO</span>
             </div>
           </div>
         </div>
