@@ -110,7 +110,7 @@ const BenefitsSection = () => {
       {/* Full-width 50vh image above the section */}
       <div
         className="w-full h-[50vh] bg-center bg-cover"
-        style={{ backgroundImage: "url('banner.png')" }}
+        style={{ backgroundImage: "url('city.jpg')" }}
       >
         <div className="w-full h-full bg-black/30 flex items-center justify-center">
           {/* Optional overlay text */}

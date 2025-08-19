@@ -19,6 +19,7 @@ const HeroSection = () => {
     { number: '41142201' },
     { number: '52552233' },
     { number: '55335131' },
+    { number: '67771781' }, // ✅ New number added
   ];
 
   useEffect(() => {
@@ -171,9 +172,9 @@ const HeroSection = () => {
 
       {/* Contact Bar */}
       <div className="bg-[#256f80] text-white py-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-4 text-center">
           {whatsappNumbers.map((contact, index) => (
-            <div key={index} className="flex flex-col items-center space-y-2">
+            <div key={index} className="flex flex-col items-center space-y-2 w-36">
               <Button onClick={() => handleWhatsAppClick(contact.number)} className="bg-white text-[#256f80] hover:bg-gray-200 w-full">
                 <MessageCircle className="ml-2 h-5 w-5" /> واتساب
               </Button>

@@ -43,6 +43,11 @@ const ServicesSection = () => {
     },
   ];
 
+  // ✅ WhatsApp handler
+  const handleWhatsAppClick = () => {
+    window.open(`https://wa.me/96567771781`, '_blank'); // your main WhatsApp number
+  };
+
   useEffect(() => {
     if (!sectionRef.current) return;
 
@@ -123,12 +128,10 @@ const ServicesSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-16">
-<h2 ref={titleRef} className="text-3xl md:text-4xl font-bold text-accent mb-4">
-  <span className="word inline-block mx-1">خدماتنا</span>
-  <span className="word inline-block mx-1">المميزة المختارة</span>
-</h2>
-
-
+          <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold text-accent mb-4">
+            <span className="word inline-block mx-1">خدماتنا</span>
+            <span className="word inline-block mx-1">المميزة المختارة</span>
+          </h2>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             نقدم خدمات توصيل متنوعة تلبي جميع احتياجاتك في الكويت
@@ -138,7 +141,11 @@ const ServicesSection = () => {
         {/* Services Grid */}
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="service-card group cursor-pointer">
+            <div
+              key={index}
+              className="service-card group cursor-pointer"
+              onClick={handleWhatsAppClick} // ✅ click card → WhatsApp
+            >
               <div className="flex flex-col items-center text-center space-y-4">
                 {/* Image */}
                 <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-primary/20 group-hover:scale-105">

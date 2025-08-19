@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MessageCircle, Phone, Mail, MapPin } from 'lucide-react';
+import { MessageCircle, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -11,7 +11,7 @@ const Footer = () => {
 
   const contactInfo = [
     { icon: Phone, title: 'اتصل بنا', info: '+965 67771782' },
-    { icon: Mail, title: 'راسلنا', info: 'info@kuwaitexpress.com' },
+    { icon: MessageCircle , title: 'راسلنا', info: '+965 6777 1781' },
     { icon: MapPin, title: 'نخدم', info: 'جميع محافظات الكويت' }
   ];
 
@@ -27,7 +27,7 @@ const Footer = () => {
       <div
         className="w-full h-[100px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('footer.png')" // Replace with your image path
+          backgroundImage: "url('footerimg.jpg')" // Replace with your image path
         }}
       ></div>
 
@@ -78,13 +78,13 @@ const Footer = () => {
                 <p className="text-white/70">
                   بدعم من{" "}
                   <a 
-                    href="https://genesisvirtue.com" 
+                    href="#" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     dir="ltr"
                     className="underline hover:text-white transition-colors"
                   >
-                    Genesis Virtue
+                    TurgoMedia
                   </a>
                 </p>
               </div>
